@@ -1,6 +1,9 @@
 #user: user
 #email: cj@gmail.com
 #password: password1
+#deployed pythonanywhere:
+#user: cjblog
+#password: password1
 
 from django.conf import settings
 from django.db import models
