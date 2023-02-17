@@ -8,15 +8,14 @@
         <h1><a href="/">Blog</a></h1>
     </header>
     
-    <article>
-        <time>published: 2.16.2023</time>
-        <h2><a href="">My first post</a>
-        <p>First Post</p>
-    </article>
-    <article>
-        <time>published: 2.16.2023</time>
-        <h2><a href="">My second post</a>
-        <p>second Post</p>
+
+        {% for post in posts %}
+        <article>
+            <time>published: {{post.published_date}}</time>
+            <h2><a href="">{{post.title}}</a></h2>
+            <p>{{post.text|linebreaksbr}}</p>
+        </article>
+        {% endfor %}
     </article>
 </body>
 </html>
