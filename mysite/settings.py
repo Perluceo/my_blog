@@ -17,6 +17,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
+#login
+LOGIN_REDIRECT_URL = '/'
+
 
 # Application definition
 
